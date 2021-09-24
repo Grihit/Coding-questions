@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "xhash": "cpp",
+        "unordered_map": "cpp"
+    }
+}
