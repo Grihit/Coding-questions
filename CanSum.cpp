@@ -31,7 +31,7 @@ bool calculate(int target,int num[],unordered_map<int,bool>&memo,int n){
 
 int main()
 {
-    int target,c=0;
+    int target;
     unordered_map<int,bool> memo;
     int num[] = {7,14};
     int n = sizeof(num)/sizeof(num[0]);
