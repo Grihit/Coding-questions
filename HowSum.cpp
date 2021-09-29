@@ -1,3 +1,4 @@
+//Given a target sum and a set of numbers, find any combination of those numbers that add up to the target sum. Print -1 if no such combination exists.
 #include <iostream>
 #include <vector>
 #include <string>
