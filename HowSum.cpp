@@ -29,7 +29,6 @@ vector<int> HowSum(int target,int num[],int n,unordered_map<int,vector <int>>&me
         //cout<<result[0];
         if(result[0] != -1)
         {
-            //cout<<num[i];
             arr.push_back(num[i]);
             memo[target] = arr;
             return memo[target];
@@ -51,12 +50,12 @@ int main()
     p = HowSum(7,num,n,memo,arr);
     for(int x : p)
         cout<<x<<" ";
-    cout<<endl;
-    for (auto x : memo)
-    {
-       cout<<x.first<<" [ ";
-       for(int i : x.second)
-            cout<<i<<" ";
-        cout<<"]\n";
-    }
+    // cout<<endl;
+    // for (auto x : memo)
+    // {
+    //    cout<<x.first<<" [ ";
+    //    for(int i : x.second)
+    //         cout<<i<<" ";
+    //     cout<<"]\n";
+    // }
 }
