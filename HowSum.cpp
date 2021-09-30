@@ -44,10 +44,10 @@ int main()
 {
     unordered_map<int,vector<int>> memo;
     vector <int> arr;
-    int num[] = {2,3};
+    int num[] = {105,6,7};
     int n = sizeof(num)/sizeof(num[0]);
     vector<int>p;
-    p = HowSum(7,num,n,memo,arr);
+    p = HowSum(200,num,n,memo,arr);
     for(int x : p)
         cout<<x<<" ";
     // cout<<endl;
