@@ -1,6 +1,7 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
+
 //1 = .
 //2 = King can move
 //3 = actual X
