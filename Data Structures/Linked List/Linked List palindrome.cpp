@@ -40,3 +40,32 @@ public:
         }
     }
 };
+
+
+//Reverse Linked List Solution
+
+//Using O(1) space and O(n) time
+class Solution {
+public:
+    bool isPalindrome(ListNode* head) {
+        if(!head || !head->next)
+            return true;
+        ListNode* rev = new ListNode(head->val);
+        ListNode* temp = head->next, *check = head;
+        while(temp)
+        {
+            ListNode* t = new ListNode(temp->val);
+            t->next = rev;
+            rev = t;
+            temp = temp->next;
+        }
+        while(check)
+        {
+            if(check->val != rev->val)
+                return false;
+            rev = rev->next;
+            check= check->next;
+        }
+        return true;
+    }
+};
