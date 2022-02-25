@@ -23,3 +23,21 @@ public:
         return head;
     }
 };
+
+//Recursive Solution
+// class Solution {
+// public:
+//     ListNode* reverseList(ListNode* head) {
+//         if(head == NULL || head->next == NULL){
+//             return head;
+//         }
+        
+//         ListNode* smallAns =  reverseList(head->next);
+//         ListNode* temp = head->next;
+//         temp -> next = head;
+//         head->next = NULL;
+        
+//         return smallAns;
+        
+//     }
+// };
