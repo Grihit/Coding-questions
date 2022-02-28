@@ -69,3 +69,42 @@ public:
         return n;
     }
 };
+
+//Using Recursion
+// class Solution {
+// public:
+//     void bfs(vector<vector<char>>& grid,  vector<vector<int>>& map, int value, int r, int c) {
+//         // cout << r << ", " << c << "\n";
+//         if (r < 0 || r >= grid.size() || c < 0 || c >= grid[0].size())
+//             return;
+        
+//         if (grid[r][c] == '0')
+//             return;
+        
+//         if (map[r][c] > 0)
+//             return;
+        
+//         map[r][c] = value;
+//         bfs(grid, map, value, r-1, c);
+//         bfs(grid, map, value, r, c-1);
+//         bfs(grid, map, value, r+1, c);
+//         bfs(grid, map, value, r, c+1);
+//     }
+    
+//     int numIslands(vector<vector<char>>& grid) {
+//         vector<vector<int>> map(grid.size(), vector<int>(grid[0].size(), 0));
+        
+//         int count = 0;
+//         for (int r = 0; r < grid.size(); ++r) {
+//             for (int c = 0; c < grid[0].size(); ++c) {
+//                 // cout << r << ", " << c << "\n";
+//                 if (grid[r][c] == '1' && map[r][c] == 0) {
+//                     count++;
+//                     bfs(grid, map, count, r, c);
+//                 }
+//             }
+//         }
+        
+//         return count;
+//     }
+// };
