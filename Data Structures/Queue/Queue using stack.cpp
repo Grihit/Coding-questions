@@ -8,9 +8,6 @@ public:
     }
     
     void push(int x) {
-        if(s1.empty())
-            s1.push(x);
-        else{
             while(!s1.empty()){
                 s2.push(s1.top());
                 s1.pop();
@@ -20,7 +17,6 @@ public:
                 s1.push(s2.top());
                 s2.pop();
             }
-        }
     }
     
     int pop() {
