@@ -9,10 +9,10 @@ public:
         int maxCount=1, prevNum = INT_MIN, count=1;
         for(auto num: hash){
             //cout<<prevNum<<" "<<num<<" ";
-            if(hash.find(num - 1) == hash.end()){
+            if(!hash.count(num - 1)){
                 prevNum = num;
                 count = 1;
-                while(hash.find(prevNum+1)!=hash.end()){
+                while(hash.count(prevNum+1)){
                     prevNum++;
                     count++;
                 }
