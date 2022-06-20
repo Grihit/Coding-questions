@@ -5,11 +5,10 @@ int LongestSubsetWithZeroSum(vector < int > arr) {
     for(int i=0;i<arr.size();++i){
         sum += arr[i];
         if(sum == 0)
-                maxCount = max(maxCount, i+1);
+                maxCount = i+1;
         if(hash.find(sum) != hash.end()){
-            count = abs(hash[sum] - i);
+            count = i - hash[sum];
             maxCount = max(maxCount, count);
-            hash[sum] = min(hash[sum], i);
         }
         else
             hash[sum] = i;
