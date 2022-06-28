@@ -41,3 +41,14 @@ public:
         
 //     }
 // };
+
+//
+//         ListNode *rev = NULL;
+//         ListNode *revStart = head;
+//         while(revStart){
+//             ListNode *temp = revStart;
+//             revStart = revStart -> next;
+//             temp -> next = rev;
+//             rev = temp;
+//         }
+//         head = rev;
