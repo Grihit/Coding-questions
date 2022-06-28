@@ -7,19 +7,17 @@ public:
             {
                 //cout<<height[left]<<" ";
                 maxHeight = height[left];
-                while(height[left]<=height[right] && left<right){
-                    if(height[left] < maxHeight)
-                        count += maxHeight - height[left];
+                while(height[left]<=height[right] && left<right){    
                     maxHeight = max(maxHeight, height[left]);
+                    count += maxHeight - height[left];
                     left++;
                 }
             }
             else{
                 maxHeight = height[right];
-                while(height[right] < height[left] && left<right){
-                    if(height[right] < maxHeight)
-                        count += maxHeight - height[right];
+                while(height[right] < height[left] && left<right){   
                     maxHeight = max(maxHeight, height[right]);
+                    count += maxHeight - height[right];
                     right--;
                 }
             }
